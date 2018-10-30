@@ -3,7 +3,8 @@ import './App.css';
 
 let defaultTextColor = '#555';
 let defaultStyle = {
-  color: defaultTextColor
+  color: defaultTextColor,
+  'font-size': '16px'
 };
 
 class Aggregate extends Component {
@@ -15,7 +16,7 @@ class Aggregate extends Component {
     );
   }
 }
-ssh-keygen -t rsa -b 4096 -C "christoffer.landberg@protonmail.com"
+
 class Filter extends Component {
   render() {
     return (
@@ -46,15 +47,9 @@ class Playlist extends Component {
 
 class App extends Component {
   render() {
-    let name = 'Chris';
-    let headerStyle = {
-      'color': 'yellow',
-      'background-color': 'blue',
-      'font-size': '40px'
-    };
     return (
       <div className="App">
-        <h1>Title</h1>
+        <h1 style={{...defaultStyle, 'font-size': '52px'}}>Title</h1>
         <Aggregate/>
         <Aggregate/>
         <Filter/>
