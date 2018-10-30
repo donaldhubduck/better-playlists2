@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 let defaultTextColor = '#555';
@@ -16,7 +15,7 @@ class Aggregate extends Component {
     );
   }
 }
-
+ssh-keygen -t rsa -b 4096 -C "christoffer.landberg@protonmail.com"
 class Filter extends Component {
   render() {
     return (
